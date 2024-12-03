@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="examen_rac.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+
+            <Image Source="logo.jpg" 
+                   Aspect="AspectFit" 
+                   HeightRequest="200"
+                   HorizontalOptions="FillAndExpand" />
+
+            
+            <Label Text="Bienvenido a nuestra tienda"
+                   FontSize="24"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="Black" />
+
+                <VerticalStackLayout Spacing="15"
+                                  HorizontalOptions="FillAndExpand"
+                                  VerticalOptions="EndAndExpand">
+                
+                <Button Text="Productos" 
+                        BackgroundColor="AliceBlue"
+                        TextColor="Black"
+                        HeightRequest="50" 
+                        WidthRequest="100"
+                        Clicked="OnProductosClicked" />
+
+                <Button Text="Acerca de" 
+                        BackgroundColor="AliceBlue"
+                        TextColor="Black"
+                        WidthRequest="100"
+                        HeightRequest="50" />
+
+                <Button Text="Registro" 
+                        BackgroundColor="AliceBlue"
+                        TextColor="Black"
+                        HeightRequest="50" 
+                        WidthRequest="100"
+                        Clicked="OnRegistroClicked" />
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

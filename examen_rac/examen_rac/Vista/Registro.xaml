@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="examen_rac.Vista.Registro"
+             Title="Registro">
+    
+    <ScrollView>
+        
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="20">
+
+            
+            <Entry x:Name="NombreRegistro"
+                   Placeholder="Aquí va el nombre"
+                   Keyboard="Text"
+                   FontSize="18" />
+
+            <Entry x:Name="CorreoRegistro"
+                   Placeholder="Aquí va el correo"
+                   Keyboard="Email"
+                   FontSize="18" />
+
+            <Entry x:Name="ContraseniaRegistro"
+                   Placeholder="Aquí va la contraseña (Min.8 caracteres)"
+                   IsPassword="True"
+                   FontSize="18" />
+
+            <Entry x:Name="ConfirmaRegistro"
+                   Placeholder="Verifique contraseña"
+                   IsPassword="True"
+                   FontSize="18" />
+
+            <Button Text="Registrar"
+                    BackgroundColor="AliceBlue"
+                    TextColor="Black"
+                    HeightRequest="50"
+                    Clicked="OnRegistrarClicked" />
+
+            <Button Text="Limpiar"
+                    BackgroundColor="AliceBlue"
+                    TextColor="Black"
+                    HeightRequest="50"
+                    Clicked="OnLimpiarClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
